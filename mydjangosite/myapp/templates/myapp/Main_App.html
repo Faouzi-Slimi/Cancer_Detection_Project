@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+{% load static %}
+
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}" xmlns="http://www.w3.org/1999/html">
+
+<html lang="en">
+
+<style>
+table, th, td {
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+</style>
+<head>
+    <title>MyDjangoApp</title>
+
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body class="override">
+   <div class="content" >
+       {% csrf_token %}
+
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" >Cancer Detection</a>
+                </div>
+                </div>
+        </nav>
+   </div>
+   <footer>
+        <div class="container">
+            <div class="row well ml-t">
+                 <div class="panel-heading">
+                            <h3 id="AlertDiv">Welcome</h3>
+                 </div>
+
+            </div>
+
+
+        </div>
+   </footer>
+   <table style="width:1200px;" class="center">
+       <tr style="height:290px">
+           <th>
+               <div >
+
+                   {% load static %} <img src= "{% static url  %}" alt="home"   width="600px" />
+
+               </div>
+
+           </th>
+           <th>
+               <div >
+
+                   {% load static %} <img src= "{% static url1  %}" alt="home"    width="500px" height="200px" />
+                   <h1 CLASS="center">{% load static %} {{class0}} {{class1}}</h1>
+
+               </div>
+
+           </th>
+
+       </tr>
+
+       <tr>
+           <th>
+
+               <form action="{% url 'upload_image' %}" method="post" enctype="multipart/form-data" class="form-inline">
+                                     {% csrf_token %}
+                                     <input type="submit" value="Upload" class="form-control">
+                                     <input type="file" name="image" class="form-control col-md-8" required>
+               </form>
+           </th>
+           <th>
+
+               <form action="{% url 'Predict' %}" method="post" enctype="multipart/form-data" >
+                                     {% csrf_token %}
+
+                                     <input type="submit" value="Predict" class=" center">
+               </form>
+           </th>
+
+       </tr>
+   </table>
+
+
+
+
+
+   <div >
+       <footer>
+            <div class="container">
+                 <div class="row well ml-t">
+                    <div class="col-lg-8 col-md-8">
+                        <h6>Developed by: <a href="https://www.linkedin.com/in/fedi-boussora-b969421bb/?fbclid=IwAR0Cqexg-JsXm1Hd75n0Xn7_ir35C3BF-TomtARbV1q5ucriYjjO9XWN7tk" target="_blank">Fedi Bousorra</a></h6>
+                         <h6>Developed by: <a href="https://linkedin.com/in/slimi-fawzi-b26944200" target="_blank">Faouzi Slimi</a></h6>
+                         <h6>Developed by: <a href="https://www.linkedin.com/in/eya-ben-romdhane-b75734180/?fbclid=IwAR2UDQXmgHiFc1oFXbMv0NjjuRAPfO-uESbDs7K8boTAAA0gUZH9xH42Mm4" target="_blank">Eya Eya</a></h6>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <p>All Rights Reserved.</p>
+                    </div>
+                 </div>
+            </div>
+       </footer>
+   </div>
+
+</body>
+</html>
