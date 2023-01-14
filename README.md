@@ -6,11 +6,16 @@ This project is composed on two parts :
   The secand part is the phase of deployment. I develop a site web using Django.
    With this site you can create user and use this user to upload photo and classify it cancer or not.  
    1. Launch Project :  'cd mydjangosite' then ' py manage.py runserver ' 
-   2. Login with admin option and Create user : ![image](https://user-images.githubusercontent.com/107620232/212472666-9b3edcb0-dbcf-4770-993f-1fef0e9d43a8.png)  
-   3. Log in with the new user :![image](https://user-images.githubusercontent.com/107620232/212472780-9cead314-89c2-4218-bdd7-cfb782719bd9.png)  
-   4. Upload Photo : ![image](https://user-images.githubusercontent.com/107620232/212472818-d54e6654-ac1a-4a01-b7ac-ed3e537f1fe8.png)  
-   5. Check if 'Cancer' Or Not :
+   
+   3. Login with admin option and Create user : ![image](https://user-images.githubusercontent.com/107620232/212472666-9b3edcb0-dbcf-4770-993f-1fef0e9d43a8.png) 
+    
+   5. Log in with the new user :![image](https://user-images.githubusercontent.com/107620232/212472780-9cead314-89c2-4218-bdd7-cfb782719bd9.png)  
+   
+   7. Upload Photo : ![image](https://user-images.githubusercontent.com/107620232/212472818-d54e6654-ac1a-4a01-b7ac-ed3e537f1fe8.png)  
+   8. Check if 'Cancer' Or Not :
+   
       - First Photo : ![image](https://user-images.githubusercontent.com/107620232/212472864-8a326e71-1458-4cc8-94e8-e99afca5e94d.png)  
+      
       - Second photo : ![image](https://user-images.githubusercontent.com/107620232/212472917-a4f9d462-0025-40e9-9fca-03503ec54bf0.png)
 
 
