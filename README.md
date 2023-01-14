@@ -1,7 +1,7 @@
 # Cancer_Detection_Project
 This project is composed on two parts :  
 ### Part 1 :  
-  The first part consist of development of classification model. You can find the code in the file 'Classification_Models.ipynb'.  
+  The first part consist of development of classification model able to classify images on "cancer" or "not cancer" based on the dataset "PCam (PatchCamelyon) Dataset | Cancer Detection" from kaggle (https://www.kaggle.com/datasets/gautamchettiar/pcam-extended) . You can find the code in the file 'Classification_Models.ipynb'.  
 ### Part 2 :  
   The secand part is the phase of deployment. I develop a site web using Django.
    With this site you can create user and use this user to upload photo and classify it cancer or not.  
